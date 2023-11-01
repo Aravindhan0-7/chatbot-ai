@@ -5,8 +5,6 @@
             "patterns": [
                 "hi",
                 "hey",
-                "how are you",
-                "good day",
                 "hello",
                 "is anyone there?","hellooooo","hiii"
             ],
@@ -17,6 +15,21 @@
                 "heyyy",
                 "hi, how can I help you?"
             ]
+        },
+        {
+            "tag":"basic",
+            "patterns":["hi,how are you?","how are you?"],
+            "responses":["i am fine , by the way you can ask me any queries related to the food delivery application"]
+        },
+        {
+            "tag":"fine",
+            "patterns":["i am fine,","fine","yes, i am fine bro"],
+            "responses":["glad to hear it, so you can ask me any help related to the food delivery "]
+        },
+        {
+            "tag":"food",
+            "patterns":["what is your favourite food","favourite food of yours?","favourite food","what's you favourite food"],
+            "responses":["i dont know your favourite food by mine is chicken biryani...order it using our food delivery "]
         },
         {
             "tag": "goodbye",
@@ -43,13 +56,19 @@
                 "what type of food is this",
                 "is my food vegan?",
                 "what type of food is available",
-                "what are the foods available?","what food is there?","food?"
+                "what are the foods available?","what food is there?","food?","can you suggest me any food?","i want to order food"
             ],
             "responses": [
                 "italian, indian,continental,dhabha,pizza,burger,vegan an other dishes",
                 "parotta,briyani,pizza,burger,variety rice and many other dishes available",
                 "pure veg or non veg?"
             ]
+        },
+        {
+            "tag":"no",
+            "patterns":["no","i can't","not","not okay"],
+            "responses":["sorry sir,i will try my best to provide you best results, ask me any other help regarding this application...thank you!!"]
+
         },
         {
             "tag":"non-veg",
@@ -85,7 +104,7 @@
         {
             "tag":"ok",
             "patterns":["ok","yes","done","okay"],
-            "responses":["do you need any other help?","ask me if you need any other help","type quit to end the chat, thank you!!"]
+            "responses":["do you need any other help?","ask me if you need any other help"]
 
         },
         { "tag":"continental",
@@ -118,7 +137,7 @@
         },
         { "tag":"vegan",
         "patterns":["i am a vegan","i want vegan restaurants","i need vegan type of foods","vegan food","vegan","what vegan food is avilable","only vegan foods"],
-        "responses":["The vegan foods are available "]
+        "responses":["The vegan foods are available but we dont have separate restaurants for that ...sorry"]
 
         },
         {
@@ -133,6 +152,7 @@
         "responses":["buhari,star,cholan mess,thalapakatti,samco,zaitoon are the highly rated biriyani restaurants. order it using our application thank you!!!"]
 
     },
+
     {
         "tag":"parotta",
         "patterns":["parotta?","i would like to eat parotta","i like parotta"],
@@ -153,7 +173,7 @@
                 "when will my order dispatch?",
                 "at what time will I receive my order?",
                 "when will I receive my order",
-                "where is my food?"
+                "where is my food?","i want to track my order","can you track my order?"
             ],
             "responses": [
                 "your order is on the way",
@@ -167,7 +187,7 @@
             "patterns": [
                 "can I pay through online?",
                 "I can only pay through cash",
-                "payment?"
+                "payment?","how can i pay?","how to pay?","what is the payment procedure?"
             ],
             "responses": [
                 "sure, you can pay through any mode of payment",
@@ -183,13 +203,42 @@
                 "I want my refund",
                 "when will I get my money back",
                 "where is my money?",
-                "refund?"
+                "refund?","when will i get my refund?","now, i need my refund","refund my money please","cancel my order and refund my money"
             ],
             "responses": [
                 "sure, we will send your money back within 2-3 days",
                 "sure, I will refund your money",
                 "your refund money is being processed"
             ]
+        },
+        
+        {
+            "tag":"BASICS",
+            "patterns":["what are you doing?","what doing?"],
+            "responses":["my work is to provide you queries related to food delivery "]
+        },
+        {
+            "tag":"celebrities",
+            "patterns":["do you know vijay","do you know dhoni","vijay","dhoni","ms dhoni","rajini","do you know rajini","do you know?","thalapathy","thala","aandavar","kamal","pushpa"],
+            "responses":["yes i know him he is my idol he used to order in our application everytime!!"]
+
+        },
+        {
+            "tag":"refunding",
+            "patterns":["how to refund?","i dont know how to make refund "],
+            "responses":["its very simple, just text me refund the money ,refund will start processing if you have ...thank you!!"]
+        },
+        {
+            "tag":"order",
+            "patterns":["how to order food?","how to order?","can i order using the chatbot itself?"],
+            "responses":["no, you cant order food through the chatbot but I can suggest you the restaurants to order best food based on your choice like indian,continental,italian,etc. "]
+        },
+        {
+            "tag":"cancel",
+            "patterns":["cancel my order","i want to cancel my order","cancel order"],
+            "responses":["sure i will cancel your order but contact the delivery person if the food is dispatched"]
         }
+        
+    
     ]
 }
